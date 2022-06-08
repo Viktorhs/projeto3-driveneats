@@ -4,30 +4,28 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
+    width: 414px;
 }
-    
 h1, h2 {
     font-family: 'Righteous', cursive;
 }
-
 header {
     background-color:#CF2B2B;
-    width: 100%;
+    width: 414px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     position: fixed;
     top: 0;
+    left:0;
+    z-index: 1;
 }
-
 header div {
     margin-left: 21px;
 }
-
 header div>h1 {
     height: 44px;
     margin: 5px 0;
@@ -37,11 +35,67 @@ header div>h1 {
     letter-spacing: -0.012em;
     color: #FFFFFF;
 }
-
 header div>h3 {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
     margin-bottom: 18px;
+}
+.conteudo {
+    margin-top: 98px;
+}
+.cardapio {
+    padding-top: 27px
+}
+.cardapio>h2 {
+    margin: 0 0 17px 19px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    background-color: aquamarine;
+    padding-left: 10px;
+}
+.box div {
+    margin: 17px 9px;
+    padding: 0px 14px;
+    width: 172px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+}
+.box div>img {
+    width: 144px;
+    border-radius: 4px;
+    margin: 18px 0 8px 0; 
+}
+.box div>h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 4px;
+}
+.box div>h4 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+    margin-bottom: 5px;
+}
+.box div>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 13px;
 }
