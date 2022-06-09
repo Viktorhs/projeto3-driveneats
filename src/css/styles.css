@@ -148,3 +148,46 @@ button:hover{
 ::-webkit-scrollbar {
     display: none;
 }
+
+@media (min-width:415px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        width: auto;
+    }
+    header {
+        width: 100%;
+        justify-content: space-between;
+    }
+    header div {
+        width: 975px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        left: 0;
+    
+    }
+    .cardapio {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 614px;
+
+    }
+    .box {
+        width: 614px;
+        flex-wrap: wrap;
+        
+    }
+    .confirmar {
+        width: 100%;
+    }
+}
