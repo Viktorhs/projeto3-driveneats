@@ -9,7 +9,7 @@ a{
 }
 body {
     font-family: 'Roboto', sans-serif;
-    width: 414px;
+    
     display: flexbox;
 }
 h1, h2 {
@@ -53,10 +53,15 @@ header div>h3 {
     width: 100%;
     margin: 100px 0;
     background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 .cardapio-principal,.cardapio-bebida,.cardapio-sobremesa {
     padding-top: 27px;
+    width: 414px;
 
 }
 .conteudo h2 {
