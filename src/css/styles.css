@@ -15,6 +15,11 @@ body {
 h1, h2 {
     font-family: 'Righteous', cursive;
 }
+img{
+    width: 144px;
+    height: 87px;
+    object-fit: cover;
+}
 header {
     background-color:#CF2B2B;
     width: 100%;
@@ -51,7 +56,7 @@ header div>h3 {
 }
 .conteudo {
     width: 100%;
-    margin: 100px 0;
+    margin: 100px 0 130px 0;
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
