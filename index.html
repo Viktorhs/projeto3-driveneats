@@ -19,96 +19,134 @@
     </header>
 
     <div class="conteudo">
-        <div class="cardapio">
+        <div class="cardapio-principal">
             <h2>Primeiro, seu prato</h2>
             <div class="box">
-                <div>
+                <div class="card" onclick = "selecionarPrato(this)">
                     <img src="./src/images/frango_yin_yang 1.png" alt="">
                     <h3>Frango Yin Yang</h3>
                     <h4>Um pouco de batata, um pouco de salada</h4>
-                    <p>R$ 14,90</p>
+                    <div><span>R$ </span><p>14,90</p></div>
                 </div>
-                <div>
+                <div class="card" onclick = "selecionarPrato(this)">
                     <img src="./src/images/frango_yin_yang 1.png" alt="">
                     <h3>Frango Yin Yang</h3>
                     <h4>Um pouco de batata, um pouco de salada</h4>
-                    <p>R$ 14,90</p>
-                </div><div>
+                    <div><span>R$ </span><p>14,90</p></div>
+                </div>
+                <div class="card" onclick = "selecionarPrato(this)">
                     <img src="./src/images/frango_yin_yang 1.png" alt="">
                     <h3>Frango Yin Yang</h3>
                     <h4>Um pouco de batata, um pouco de salada</h4>
-                    <p>R$ 14,90</p>
-                </div><div>
+                    <div><span>R$ </span><p>14,90</p></div>
+                </div>
+                <div class="card" onclick = "selecionarPrato(this)">
                     <img src="./src/images/frango_yin_yang 1.png" alt="">
                     <h3>Frango Yin Yang</h3>
                     <h4>Um pouco de batata, um pouco de salada</h4>
-                    <p>R$ 14,90</p>
+                    <div><span>R$ </span><p>14,90</p></div>
+                    <div></div>
                 </div>
             </div>
 
         </div>
 
-        <div class="cardapio">
+        <div class="cardapio-bebida">
             <h2>Agora, sua bebida</h2>
             <div class="box">
-                <div>
+                <div class="card" onclick = "selecionarBebida(this)">
                     <img src="./src/images/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
-                    <p>R$ 4,90</p>
+                    <div><span>R$ </span><p>4,90</p></div>
                 </div>
-                <div>
+                <div class="card" onclick = "selecionarBebida(this)">
                     <img src="./src/images/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
-                    <p>R$ 4,90</p>
-                </div><div>
+                    <div><span>R$ </span><p>4,90</p></div>
+                </div><div class="card" onclick = "selecionarBebida(this)">
                     <img src="./src/images/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
-                    <p>R$ 4,90</p>
-                </div><div>
+                    <div><span>R$ </span><p>4,90</p></div>
+                </div><div class="card" onclick = "selecionarBebida(this)">
                     <img src="./src/images/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
-                    <p>R$ 4,90</p>
+                    <div><span>R$ </span><p>4,90</p></div>
                 </div>
             </div>
         </div>
 
-        <div class="cardapio">
+        <div class="cardapio-sobremesa">
             <h2>Por fim, sua sobremesa</h2>
             <div class="box">
-                <div>
+                <div class="card" onclick = "selecionarSobremesa(this)">
                     <img src="./src/images/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
-                    <p>R$ 7,90</p>
+                    <div><span>R$ </span><p>7,90</p></div>
                 </div>
-                <div>
+                <div class="card" onclick = "selecionarSobremesa(this)"> 
                     <img src="./src/images/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
-                    <p>R$ 7,90</p>
-                </div><div>
+                    <div><span>R$ </span><p>7,90</p></div>
+                </div><div class="card" onclick = "selecionarSobremesa(this)">
                     <img src="./src/images/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
-                    <p>R$ 7,90</p>
-                </div><div>
+                    <div><span>R$ </span><p>7,90</p></div>
+                </div><div class="card" onclick = "selecionarSobremesa(this)">
                     <img src="./src/images/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
-                    <p>R$ 7,90</p>
+                    <div><span>R$ </span><p>7,90</p></div>
                 </div>
             </div>
         </div>
 
-        <div class="confirmar">
-            <button>
-                <p>Selecioone os 3 itens para fechar o pedido</p>
-            </button>
+        <div class="botoes">
+            <div class="botao">
+                <p>Selecione os 3 itens para fechar o pedido</p>
+            </div>
+            <div class="botao-pedir desativado" onclick="pedirEnderecoEConfirmar(); addNomeEPreco()">
+                <p>Fechar pedido</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="confirmar-pedido desativado">
+        <div>
+            <h5>Confirme seu pedido</h5>
+            <div class="prato-principal">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="bebida">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="sobremesa">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="total">
+                <h5>TOTAL</h5>
+                <p>valor</p>
+            </div>
+            <div class="botoes-confirmar">
+                 <div class="tudo-certo" onclick="fazerPedido()">
+                        Tudo certo, pode pedir!
+                </div>
+                <div class="cancelar" onclick="cancelar()">
+                    cancelar
+                </div>
+            </div>
         </div>
     </div>
+    <script src="./src/scripts/scripts.js"></script>
 </body>
 </html>
