@@ -115,10 +115,10 @@ function fazerPedido() {
     - Prato: ${nomePrincipal}
     - Bebida: ${nomeBebida}
     - Sobremesa: ${nomeSobremesa}
-    Total: ${precoTotal}
-    \n
-    Nome: ${nome}
-    Endereço: ${endereco}`
+Total: R$ ${precoTotal}
+    
+Nome: ${nome}
+Endereço: ${endereco}`
     mensagem = encodeURI(mensagem)
     let link = `https://wa.me/+5516999999999?text=${mensagem}`
 
