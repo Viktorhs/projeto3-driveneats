@@ -112,6 +112,7 @@ function pedirEnderecoEConfirmar(elemento){
 }
 
 function fazerPedido() {
+    precoTotal = precoTotal.toString().replace(",", ".");
     let mensagem = `Olá, gostaria de fazer o pedido:
     - Prato: ${nomePrincipal}
     - Bebida: ${nomeBebida}
