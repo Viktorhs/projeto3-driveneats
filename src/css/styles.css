@@ -88,6 +88,7 @@ header div>h3 {
     
 }
 .card {
+    position: relative;
     margin: 17px 9px;
     padding: 0px 14px;
     width: 172px;
@@ -266,6 +267,7 @@ header div>h3 {
     letter-spacing: 0.018em;
     color: #FFFFFF;
 }
+
 /* JS estilos*/
 
 .desativado {
@@ -274,4 +276,8 @@ header div>h3 {
 
 .ativo {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    background: url(../images/checkmark-circle\ 1.svg);
+    background-position: bottom 13px right 12px;
+    background-repeat: no-repeat;
+    background-size: 19px;
 }

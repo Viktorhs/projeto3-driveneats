@@ -17,6 +17,7 @@ function selecionarPrato(elemento) {
     let opcaoClicada = document.querySelector(".cardapio-principal .ativo");
     if(opcaoClicada !== null) {
         opcaoClicada.classList.remove("ativo")
+
     }
     elemento.classList.add("ativo")
 
