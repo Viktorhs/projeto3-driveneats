@@ -122,7 +122,7 @@ Total: R$ ${precoTotal}
 Nome: ${nome}
 Endereço: ${endereco}`
     mensagem = encodeURI(mensagem)
-    let link = `https://wa.me/+5516999999999?text=${mensagem}`
+    let link = `https://wa.me/+5599999999999?text=${mensagem}`
 
     window.open(link);
 }
